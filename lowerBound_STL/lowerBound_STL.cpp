@@ -26,21 +26,6 @@ int main() {
         Y.push_back(y);
     }
     for(int i=0; i<Q; i++){
-        /*int key;
-        key = Y[i];
-        int begin = 0,end = N;
-        while(begin <= end){
-            if(X[(begin+end)/2]==key){
-                found = true;
-            }
-            else if(X[(begin+end)/2]>key){
-                end = (begin+end)/2-1;
-            }
-            else if(X[(begin+end)/2]<key){
-                begin = (begin+end)/2+1;
-            }
-        }*/
-        
         vector<int>::iterator l;
         l = lower_bound(X.begin(),X.end(),Y[i]);
         if(find(X.begin(),X.end(),Y[i]) != X.end())
